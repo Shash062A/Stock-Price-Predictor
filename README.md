@@ -124,4 +124,4 @@ Do not use this model for real trading decisions.
 Shash
 Computer Science Engineering Student
 Learning Machine Learning & Stock Prediction
-GitHub: your-github-username-here
+GitHub: https://github.com/Shash062A
