@@ -1,4 +1,22 @@
 # 📈 Apple Stock Price Predictor (LSTM)
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)
+![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red?logo=keras)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific-blue?logo=numpy)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?logo=pandas)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-informational)
+![Scikit--learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikitlearn)
+![yfinance](https://img.shields.io/badge/yfinance-Stock%20Data-green)
+![pandas--datareader](https://img.shields.io/badge/pandas--datareader-API%20Data-green)
+![Alpha%20Vantage](https://img.shields.io/badge/Alpha%20Vantage-API-blue)
+![dotenv](https://img.shields.io/badge/python--dotenv-Env%20Vars-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Learning%20Project-yellow)
+
+A simple machine learning project that predicts Apple stock prices using an LSTM neural network.  
+Built for **learning purposes**, not real-world trading.
+
 
 This project is a **learning-focused machine learning experiment** built in **Jupyter Notebook** to understand how **Long Short-Term Memory (LSTM)** networks work for time-series forecasting.
 
@@ -27,18 +45,21 @@ It is *not* intended for real trading or financial advice — it’s purely for 
 ---
 
 ## 🛠️ Tech Stack
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)
+![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red?logo=keras)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific-blue?logo=numpy)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?logo=pandas)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-informational)
+![Scikit--learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikitlearn)
+![yfinance](https://img.shields.io/badge/yfinance-Stock%20Data-green)
+![pandas--datareader](https://img.shields.io/badge/pandas--datareader-API%20Data-green)
+![Alpha%20Vantage](https://img.shields.io/badge/Alpha%20Vantage-API-blue)
+![dotenv](https://img.shields.io/badge/python--dotenv-Env%20Vars-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Learning%20Project-yellow)
 
-- Python  
-- Jupyter Notebook  
-- TensorFlow / Keras  
-- NumPy  
-- Pandas  
-- Matplotlib  
-- Scikit-learn  
-- yfinance  
-- pandas-datareader  
-- Alpha Vantage API (optional)  
-- python-dotenv  
 
 ---
 
