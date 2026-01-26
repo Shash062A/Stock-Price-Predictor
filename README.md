@@ -57,71 +57,91 @@ It is *not* intended for real trading or financial advice — it’s purely for 
 1. Clone the repository  
 2. Install required libraries:
 
-```bash
+```
+```
 
-pip install numpy pandas matplotlib scikit-learn yfinance pandas-datareader tensorflow keras python-dotenv
+## bash pip install numpy pandas matplotlib scikit-learn yfinance pandas-datareader tensorflow keras python-dotenv
+
+```
+```
 
 ALPHAVANTAGE_API_KEY=your_api_key_here
 
+```
+```
+
 ## ▶️ How It Works (High-Level)
 
-Fetch Apple stock price data (2019 → present)
+- Fetch Apple stock price data (2019 → present)
 
-Extract Close prices
+- Extract Close prices
 
-Scale data to range 0–1
+- Scale data to range 0–1
 
-Build 60-day rolling windows
+- Build 60-day rolling windows
 
-Train LSTM model
+- Train LSTM model
 
-Test predictions
+- Test predictions
 
-Predict next closing price
+- Predict next closing price
 
-Visualize results
+- Visualize results
+
+```
+```
 
 ## ⚠️ Known Limitations
 
-No hyperparameter tuning
+- No hyperparameter tuning
 
-Minimal error handling
+- Minimal error handling
 
-Model retrains every run
+- Model retrains every run
 
-Accuracy is not optimized
+- Accuracy is not optimized
 
-Uses simple architecture
+- Uses simple architecture
 
-Not suitable for real trading
+- Not suitable for real trading
 
-This project is intentionally simple and imperfect — the goal is to learn, not to build a production-grade trading system.
+- This project is intentionally simple and imperfect — the goal is to learn, not to build a production-grade trading system.
+
+```
+```
 
 ## 📌 Future Improvements
 
-Add proper train/validation split
+- Add proper train/validation split
 
-Save & load trained model
+- Save & load trained model
 
-Improve error handling
+- Improve error handling
 
-Add technical indicators (RSI, MACD, EMA)
+- Add technical indicators (RSI, MACD, EMA)
 
-Hyperparameter tuning
+- Hyperparameter tuning
 
-Multi-stock support
+- Multi-stock support
 
-Web interface (Streamlit or Flask)
+- Web interface (Streamlit or Flask)
+
+```
+```
 
 ## 📜 Disclaimer
 
-This project is for educational purposes only.
-It does not provide financial advice.
-Do not use this model for real trading decisions.
+- This project is for educational purposes only.
+- It does not provide financial advice.
+- Do not use this model for real trading decisions.
+
+```
+```
 
 ## 🙌 Author
 
-Shash
-Computer Science Engineering Student
-Learning Machine Learning & Stock Prediction
-GitHub: https://github.com/Shash062A
+- Shash
+- Computer Science Engineering Student
+- Learning Machine Learning & Stock Prediction
+- GitHub: https://github.com/Shash062A
+```
