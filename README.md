@@ -121,33 +121,30 @@ python-dotenv>=1.0
 ## 🔑 Environment Setup
 
 1. Clone the repository
-2. git clone https://github.com/Shash062A/Stock-Price-Predictor.git
-3. cd Stock-Price-Predictor
-4. Install required libraries:
+```bash
+ git clone https://github.com/Shash062A/Stock-Price-Predictor.git
+ cd Stock-Price-Predictor```
+
+5. Install required libraries:
 ---
 
 ## 📦 Installation
 
 Install dependencies using:
 
-bash...  
-
-pip install -r requirements.txt  
+```bash
+pip install numpy pandas ...
+  
 
 ALPHAVANTAGE_API_KEY=your_api_key_here
 
-
 ```
-
-
 ## bash pip install numpy pandas matplotlib scikit-learn yfinance pandas-datareader tensorflow keras python-dotenv
 
 ```
-```
 
 ALPHAVANTAGE_API_KEY=your_api_key_here
 
-```
 ```
 
 ## ▶️ How It Works (High-Level)
