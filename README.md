@@ -76,8 +76,6 @@ It is *not* intended for real trading or financial advice — it’s purely for 
 ### 🔐 Environment Management
 ![python-dotenv](https://img.shields.io/badge/python--dotenv-Env%20Vars-yellowgreen)
 
-
-
 ---
 
 ## 📂 Project Structure
@@ -95,9 +93,33 @@ Stock-Price-Predictor/
 
 └── README.md                  # Project documentation
 
+
 ---
 
-##📄 requirements.txt
+## 🔑 Environment Setup
+
+1. Clone the repository
+```bash
+ git clone https://github.com/Shash062A/Stock-Price-Predictor.git
+ cd Stock-Price-Predictor
+
+```
+---
+## Install required libraries:
+
+### 📦 Installation
+
+Install dependencies using:
+
+```bash
+pip install numpy pandas
+```
+---
+
+### 📄 Requirements.txt
+```bash
+pip install numpy pandas matplotlib scikit-learn yfinance pandas-datareader tensorflow keras python-dotenv
+
 numpy>=1.23  
 
 pandas>=1.5  
@@ -116,36 +138,20 @@ pandas-datareader>=0.10
 
 python-dotenv>=1.0
 
+```
 ---
-
-## 🔑 Environment Setup
-
-1. Clone the repository
+### 📁 Create a .env file in your project root
 ```bash
- git clone https://github.com/Shash062A/Stock-Price-Predictor.git
- cd Stock-Price-Predictor```
-
-5. Install required libraries:
----
-
-## 📦 Installation
-
-Install dependencies using:
-
-```bash
-pip install numpy pandas ...
-  
+Stock-Price-Predictor/
+├── app.py / main.py / notebook.ipynb
+├── requirements.txt
+├── README.md
+└── .env   👈 HERE
 
 ALPHAVANTAGE_API_KEY=your_api_key_here
 
 ```
-## bash pip install numpy pandas matplotlib scikit-learn yfinance pandas-datareader tensorflow keras python-dotenv
-
-```
-
-ALPHAVANTAGE_API_KEY=your_api_key_here
-
-```
+---
 
 ## ▶️ How It Works (High-Level)
 
@@ -165,8 +171,121 @@ ALPHAVANTAGE_API_KEY=your_api_key_here
 
 - Visualize results
 
+---
+
+## 🧠 Model Architecture Explanation (LSTM)
+
+This project uses a Long Short-Term Memory (LSTM) neural network, a specialized type of Recurrent Neural Network (RNN) designed to handle time-series data and learn long-term dependencies.
+
+Stock prices are sequential by nature — today’s price depends on previous days — which makes LSTM well-suited for this task.
+
+---
+
+## 📥 Input Layer
+
+The model takes 60 consecutive days of closing prices as input
+
+Each input sample has the shape:
+```bash
+(60, 1)
 ```
-```
+
+Where:
+
+60 = number of past days (time steps)
+
+1 = closing price feature
+
+This allows the model to learn trends and patterns over the previous 60 days.
+
+---
+
+## 🔁 LSTM Layers
+
+The network consists of stacked LSTM layers:
+
+First LSTM Layer
+
+Captures short-term and long-term price patterns
+
+return_sequences=True is used so the next LSTM layer receives full sequences
+
+Second LSTM Layer
+
+Learns higher-level temporal representations
+
+Outputs a single vector summarizing the sequence
+
+LSTM cells internally use gates (input, forget, output gates) to decide:
+
+What information to remember
+
+What to forget
+
+What to pass forward
+
+This helps prevent the vanishing gradient problem common in traditional RNNs.
+
+---
+
+## 🧮 Dense (Fully Connected) Layers
+
+After the LSTM layers:
+
+One or more Dense layers are used to:
+
+Transform learned patterns into a numerical prediction
+
+The final Dense layer has:
+
+1 neuron
+
+Outputs the predicted next-day closing price
+
+---
+
+## 📤 Output Layer
+
+Produces a single value:
+
+Predicted Apple stock closing price for the next day
+
+Output is inverse-transformed back to the original price scale after prediction
+
+---
+
+## ⚙️ Model Compilation
+
+Loss Function:
+Mean Squared Error (MSE)
+→ Penalizes large prediction errors
+
+Optimizer:
+Adam
+→ Adaptive learning rate, efficient for time-series data
+
+---
+
+## 🧪 Training Process
+
+Data is scaled to [0, 1] using MinMaxScaler
+
+Trained for a fixed number of epochs
+
+Batch training improves convergence stability
+
+Model is retrained on each run (no saved weights yet)
+
+---
+
+## 🧠 Why LSTM for Stock Prediction?
+
+✔ Handles sequential data
+✔ Learns temporal dependencies
+✔ Remembers long-term trends
+✔ Works better than simple regression for time series
+
+---
 
 ## ⚠️ Known Limitations
 
@@ -184,8 +303,7 @@ ALPHAVANTAGE_API_KEY=your_api_key_here
 
 - This project is intentionally simple and imperfect — the goal is to learn, not to build a production-grade trading system.
 
-```
-```
+---
 
 ## 📌 Future Improvements
 
@@ -203,8 +321,7 @@ ALPHAVANTAGE_API_KEY=your_api_key_here
 
 - Web interface (Streamlit or Flask)
 
-```
-```
+---
 
 ## 📜 Disclaimer
 
@@ -212,8 +329,7 @@ ALPHAVANTAGE_API_KEY=your_api_key_here
 - It does not provide financial advice.
 - Do not use this model for real trading decisions.
 
-```
-```
+---
 
 ## 🙌 Author
 
@@ -221,4 +337,5 @@ ALPHAVANTAGE_API_KEY=your_api_key_here
 - Computer Science Engineering Student
 - Learning Machine Learning & Stock Prediction
 - GitHub: https://github.com/Shash062A
-```
+
+---
