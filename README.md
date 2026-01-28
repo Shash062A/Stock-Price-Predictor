@@ -10,9 +10,15 @@
 ![yfinance](https://img.shields.io/badge/yfinance-Stock%20Data-green)
 ![pandas--datareader](https://img.shields.io/badge/pandas--datareader-API%20Data-green)
 ![Alpha%20Vantage](https://img.shields.io/badge/Alpha%20Vantage-API-blue)
+![LSTM](https://img.shields.io/badge/Model-LSTM-brightgreen)
+![Machine Learning](https://img.shields.io/badge/Type-Time%20Series-yellow)
 ![dotenv](https://img.shields.io/badge/python--dotenv-Env%20Vars-yellow)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Learning%20Project-yellow)
+![Requirements](https://img.shields.io/badge/requirements.txt-available-brightgreen)
+![Last Commit](https://img.shields.io/github/last-commit/Shash062A/Stock-Price-Predictor)
+![Stars](https://img.shields.io/github/stars/Shash062A/Stock-Price-Predictor?style=social)
+![Forks](https://img.shields.io/github/forks/Shash062A/Stock-Price-Predictor?style=social)
 
 A simple machine learning project that predicts Apple stock prices using an LSTM neural network.  
 Built for **learning purposes**, not real-world trading.
@@ -44,42 +50,95 @@ It is *not* intended for real trading or financial advice — it’s purely for 
 
 ---
 
-## 🛠️ Tech Stack
-![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)
+## 🧰 Tech Stack
+
+### 🧠 Programming & Environment
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+
+### 🤖 Machine Learning / Deep Learning
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)
 ![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red?logo=keras)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-f7931e?logo=scikit-learn)
+
+### 📊 Data Processing & Analysis
 ![NumPy](https://img.shields.io/badge/NumPy-Scientific-blue?logo=numpy)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?logo=pandas)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-informational)
-![Scikit--learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikitlearn)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+
+### 📈 Data Visualization
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue)
+
+### 💹 Stock Market Data Sources
 ![yfinance](https://img.shields.io/badge/yfinance-Stock%20Data-green)
-![pandas--datareader](https://img.shields.io/badge/pandas--datareader-API%20Data-green)
-![Alpha%20Vantage](https://img.shields.io/badge/Alpha%20Vantage-API-blue)
-![dotenv](https://img.shields.io/badge/python--dotenv-Env%20Vars-yellow)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Status](https://img.shields.io/badge/Status-Learning%20Project-yellow)
+![pandas-datareader](https://img.shields.io/badge/pandas--datareader-API%20Data-yellow)
+![Alpha Vantage](https://img.shields.io/badge/Alpha%20Vantage-API-purple)
+
+### 🔐 Environment Management
+![python-dotenv](https://img.shields.io/badge/python--dotenv-Env%20Vars-yellowgreen)
+
 
 
 ---
 
 ## 📂 Project Structure
-├── stock_predictor.ipynb # Main Jupyter Notebook
-├── AAPL_full_data.csv # Cached historical stock data
-├── last_price_cache.csv # Fallback cache for API failures
-├── .env # API keys (not included in repo)
-└── README.md # This file
+Stock-Price-Predictor/  
 
+├── stock_predictor.ipynb      # Main Jupyter Notebook  
+
+├── AAPL_full_data.csv         # Cached historical stock data  
+
+├── last_price_cache.csv       # Fallback cache for API failures  
+
+├── requirements.txt           # Project dependencies  
+
+├── .env                       # API keys (not included in repo)  
+
+└── README.md                  # Project documentation
+
+---
+
+##📄 requirements.txt
+numpy>=1.23  
+
+pandas>=1.5  
+
+matplotlib>=3.6  
+
+scikit-learn>=1.2  
+
+tensorflow>=2.10  
+
+keras>=2.10  
+
+yfinance>=0.2  
+
+pandas-datareader>=0.10  
+
+python-dotenv>=1.0
 
 ---
 
 ## 🔑 Environment Setup
 
-1. Clone the repository  
-2. Install required libraries:
+1. Clone the repository
+2. git clone https://github.com/Shash062A/Stock-Price-Predictor.git
+3. cd Stock-Price-Predictor
+4. Install required libraries:
+---
+
+## 📦 Installation
+
+Install dependencies using:
+
+bash...  
+
+pip install -r requirements.txt  
+
+ALPHAVANTAGE_API_KEY=your_api_key_here
+
 
 ```
-```
+
 
 ## bash pip install numpy pandas matplotlib scikit-learn yfinance pandas-datareader tensorflow keras python-dotenv
 
